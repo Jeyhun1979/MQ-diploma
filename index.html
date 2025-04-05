@@ -12,6 +12,35 @@
           <div class="header-top-menu">
             <a class="header-top-menu-logo" href="#0">
               <img class="header-logo-image" src="svg/noemi-logo.svg" alt="Логотип"></a>
+            <div class="header-burger">
+              <input type="checkbox" id="burger-menu">
+              <label class="header-burger-menu" for="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+                  <path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 
+                      21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/>
+                </svg>
+              </label>
+              <ul class="header-navigation-group">
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Главная</a>
+                </li>
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Посты</a>
+                </li>
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Статьи</a>
+                </li>
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Теги</a>
+                </li>
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Темы</a>
+                </li>
+                <li class="header-navigation-items">
+                  <a href="#0" class="header-navigation-links">Контакты</a>
+                </li>
+              </ul>
+            </div>
             <nav class="header-navigation">
               <ul class="header-navigation-group">
                 <li class="header-navigation-items">
@@ -34,12 +63,13 @@
                 </li>
               </ul>
             </nav>
-            <div class="header-burger-menu">
+            <!-- <input type="checkbox" id="burger-menu">
+            <label class="header-burger-menu" for="burger-menu">
               <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
                 <path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 
                       21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/>
               </svg>
-            </div>
+            </label> -->
           </div>
           <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1> 
         </div>    
@@ -49,6 +79,7 @@
         <div class="trends-title-container">
             <h2 class="trends-title">Сейчас в тренде</h2>  
         </div>
+        <hr>
         <div class="trends-news-container">
             <article class="trends-news  garden">
                 <div class="trends-news-content">
@@ -123,9 +154,7 @@
       </section>
       
       <div class="main-container">
-        <main class="main-content">
-          <section class="main-posts">
-            <h2 class="visually-hidden">Main-title</h2> 
+        <main class="main-posts"> 
             <article class="last-post">
               <img class="last-post-image" src="images/last-post1.jpg" alt="Мужчина прогуливается на берегу ранним утром">
               <div class="last-post-container">
@@ -250,12 +279,11 @@
       Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
               </div>
             </article>
-        </section>
-    </main>
+        </main>
         <aside class="additional-menu">
           <section class="new-posts-sidebar">
-            <h2 class="sidebar-title">Новые посты
-            </h2>
+            <h2 class="sidebar-title">Новые посты</h2>
+            <hr>
             <article class="new-post">
               <img class="new-post-image" src="images/2.jpg" alt="Мужчина прогуливается на берегу ранним утром">
               <div class="new-post-content">
@@ -317,6 +345,7 @@
           <section class="newsletter">
               <h2 class="sidebar-title">
              Рассылка</h2>
+             <hr>
               <form action="#0" class="newsletter-form">
                 <label for="newsletter-email">
                   <input type="email" id="newsletter-email" placeholder="Ваш email-адрес" required>
@@ -327,8 +356,8 @@
               </form>
             </section>
           <section class="sidebar-tags">
-              <h2 class="sidebar-title">
-            Теги</h2>
+              <h2 class="sidebar-title">Теги</h2>
+              <hr>
               <ul class="sidebar-tags-group">
                 <li class="sidebar-tags-items">
                   <a href="#0" class="sidebar-tags-links">Fashion</a>     
@@ -358,30 +387,31 @@
             </section>
           <section class="sidebar-topics">
             <h2 class="sidebar-title">Темы</h2>
+            <hr>
             <ul class="sidebar-topics-group">
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Красота</a>
-                  <sup class="topics-amount">12</sup>
+                  <span class="topics-amount">12</span>
               </li>
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Здоровье</a>
-                  <sup class="topics-amount">4</sup>
+                  <span class="topics-amount">4</span>
               </li>
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Образ жизни</a>
-                  <sup class="topics-amount">145</sup>
+                  <span class="topics-amount">145</span>
               </li>
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Музыка</a>
-                  <sup class="topics-amount">28</sup>
+                  <span class="topics-amount">28</span>
               </li>
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Спорт</a>
-                  <sup class="topics-amount">62</sup>
+                  <span class="topics-amount">62</span>
               </li>
               <li class="sidebar-topics-items">
                 <a href="#0" class="sidebar-topics-links">Йога</a>
-                  <sup class="topics-amount">8</sup>
+                  <span class="topics-amount">8</span>
               </li>
             </ul>
           </section>
@@ -390,16 +420,17 @@
 
       <section class="products">
         <div class="products-title-container  trends-title-container">
-          <h2 class="products-title  trends-title">Наши изделия</h2>  
+          <h2 class="products-title  trends-title">Наши изделия</h2> 
         </div>
+        <hr>
         <div class="product-container">
           <article class="product">
             <div class="product-image-container">
-              <picture class="product-image">
+              <picture>
                  <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
                  <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px)">
                  <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
-                 <img src="images/shop-item-desk1.jpg"          
+                 <img src="images/shop-item-desk1.jpg"  class="product-image"        
                            alt="На стуле подушечка с надписью и жирной стрелкой вниз">
               </picture>
             </div>
@@ -422,11 +453,11 @@
           </article>
           <article class="product">
             <div class="product-image-container">
-              <picture class="product-image">
+              <picture>
                 <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
                 <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px)">
                 <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
-                <img src="images/shop-item-desk2.jpg"          
+                <img src="images/shop-item-desk2.jpg" class="product-image"         
                           alt="На столе самодельная тряпочная кукла, стопка книг и чашечка с блюдцем">
              </picture>
             </div>
@@ -449,11 +480,11 @@
           </article>
           <article class="product">
             <div class="product-image-container">
-              <picture class="product-image">
+              <picture>
                 <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
                 <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px)">
                 <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
-                <img src="images/shop-item-desk3.jpg"          
+                <img src="images/shop-item-desk3.jpg"  class="product-image"        
                           alt="На столе шестигранная рамка рядом ваза с цветочками">
              </picture>
             </div>
@@ -505,7 +536,7 @@
 
       <div class="popup  visually-hidden">
         <div class="popup-content">
-          <label  class="popup-close"></label>
+          <button type="button" class="popup-close"><span class="visually-hidden">Close</span></button>
           <h2 class="popup-content-title">Ваш фидбек</h2>
           <form class="fidback">
             <span class="survey-hint">Как часто вы заходите на сайт?</span>
@@ -517,15 +548,15 @@
             <span class="choice-question">Вы подписаны на e-mail рассылку?</span>
             <div class="choice">
               <div class="choice-select">
-                <input type="radio" id="choice-field">
+                <input type="radio" id="choice-field" value="Yes" name="select">
                 <label for="choice-field" class="choice-hint hint-yes"><span class="visually-hidden">Yes</span></label>
               </div>
               <span>Да</span>
             </div>
             <div class="choice">
               <div class="choice-select">
-                <input type="radio" id="choice-field">
-                <label for="choice-field" class="choice-hint hint-not"><span class="visually-hidden">No</span></label>
+                <input type="radio" id="choice-field-secondary" value="No" name="select">
+                <label for="choice-field-secondary" class="choice-hint hint-not"><span class="visually-hidden">No</span></label>
               </div>
               <span>Нет</span>
             </div>
