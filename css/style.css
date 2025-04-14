@@ -877,11 +877,14 @@
 
     .header-navigation-group {
       display: none;
+      position: absolute;
+      top: 100%;
     }
 
     .header-burger-menu {
       display: flex;
       cursor: pointer;
+      position: relative;
     }
 
     #burger-menu:checked+ .header-navigation-group {
