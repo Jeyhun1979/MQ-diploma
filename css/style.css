@@ -852,6 +852,7 @@
   @media (min-width: 641px) and (max-width: 1199px) {
     .header {
       background-image: url("../images/banner-bg-tablet.jpg");
+      width: 100%;
     }
 
     .header-container {
@@ -976,6 +977,7 @@
 @media (max-width: 640px) {
   .header {
     background-image: url("../images/banner-mobile.jpg");
+    width: 100%;
   }
 
   .header-container {
@@ -1037,7 +1039,6 @@
   }
 
   .trends-news {
-    aspect-ratio: 4 / 3;
     width: 100%;
   }
 
